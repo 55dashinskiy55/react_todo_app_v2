@@ -11,9 +11,9 @@ const ToDoFormEdit = ({editToDo, task}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" value={value} placeholder="Change your task:" onChange={event => setValue(event.target.value)}/>
-            <button type="submit">Change</button>
+        <form className="todo__task-editor" onSubmit={handleSubmit}>
+            <input className="todo__task-editor__input" type="text" value={value} placeholder="Change your task:" onChange={event => setValue(event.target.value)}/>
+            <button className="todo__task-editor__button" type="submit">Change</button>
         </form>
     )
 }

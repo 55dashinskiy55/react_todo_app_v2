@@ -22,7 +22,7 @@ const ToDoApp = () => {
     const editTask = (task, id) => setToDos(toDos.map(toDo => toDo.id === id ? {...toDo, task, isEditing: !toDo.isEditing} : toDo))
 
     return (
-        <div> 
+        <div className="todo__app"> 
         <ToDoForm addToDo={addToDo}/>
         {toDos.map((toDo, index) => toDo.isEditing? (<ToDoFormEdit editToDo={editTask} task={toDo} key={index}/>) : (<ToDo task={toDo} key={index} toggleDone={toggleDone} removeToDo={removeToDo} editToDo={editToDo}/>))} 
         </div>

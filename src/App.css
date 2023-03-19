@@ -1,3 +1,105 @@
+:root {
+    --purple: #f92dfc;
+    --dark-purple:#581459;
+    --white:#fff;
+    --black:#000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+  
+body {
+    background-color: var(--white);
+}
+  
+  
+ul, ol {
+    list-style: none;
+}
+  
+  
+a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+input, button{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+}
+
+.App {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.todo__app {
+    display: flex;
+    min-height: 100vh;
+    padding: 20px 5px;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.todo__task-adder {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    padding: 5px 10px;
+}
+
+.todo {
+    display: flex;
+    border: 1px solid var(--purple);
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+    background-color: var(--dark-purple);
+    color: var(--white);
+    padding: 5px 10px;
+}
+
+.todo__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.todo__task-adder__input {
+    border: 1px solid var(--purple);
+    min-width: 250px;   
+}
+
+.todo__task-adder__button {
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+}
+
+.todo__task-editor__input, .todo__task-editor__button {
+    border: 1px solid var(--purple);
+    background-color: var(--dark-purple);
+    color: var(--white);
+    padding: 5px 10px;
+}
+
 .task__text--done {
     text-decoration: line-through;
+    cursor: pointer;
+}
+
+.task__text {
+    cursor: pointer;
 }
